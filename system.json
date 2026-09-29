@@ -1,0 +1,479 @@
+{
+  "id": "cowboys-and-vikings",
+  "title": "Cowboys & Vikings",
+  "description": "<p>The official game system for <strong>Cowboys &amp; Vikings</strong> — a weird-west frontier RPG where the Awakening of 1805 tore the Aether open over the American plains. Includes character, adversary, hazard and crew actors; the d20 + Advantage/Fortune dice engine; Parry/Dodge combat with Soak, Wounds and Strain; the Channeling magic system with Wild Surges; Bonds, Negotiations, Skill Challenges; and compendiums of talents, spells, gear, runes, concoctions, adversary maneuvers and roll tables.</p>",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Cowboys & Vikings Design Team"
+    }
+  ],
+  "esmodules": [
+    "cowboys-and-vikings.mjs"
+  ],
+  "styles": [
+    "styles/cnv.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "biography",
+          "notes"
+        ]
+      },
+      "adversary": {
+        "htmlFields": [
+          "description",
+          "notes"
+        ]
+      },
+      "hazard": {
+        "htmlFields": [
+          "description",
+          "effect",
+          "notes"
+        ]
+      },
+      "crew": {
+        "htmlFields": [
+          "description",
+          "notes"
+        ]
+      }
+    },
+    "Item": {
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "shield": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "concoction": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "talent": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "technique": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "spell": {
+        "htmlFields": [
+          "description",
+          "critSuccess"
+        ]
+      },
+      "metamagic": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "origin": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "genetic": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "bond": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "maneuver": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "affliction": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "rune": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "material": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "essence": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ingredient": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "crewAbility": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "crewUpgrade": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "rules",
+      "label": "Rules Reference",
+      "type": "JournalEntry",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "origins",
+      "label": "Origins",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "genetics",
+      "label": "Genetic Talents, Drawbacks & Cosmetics",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "talents",
+      "label": "Talents",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "techniques",
+      "label": "Weapon & Shield Techniques",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "bonds",
+      "label": "Bonds (Teamwork Talents)",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "spells",
+      "label": "Spells & Cantrips",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "metamagic",
+      "label": "Metamagic Modifiers",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "armor",
+      "label": "Armor & Shields",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gear",
+      "label": "Adventuring Gear",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "concoctions",
+      "label": "Alchemical Concoctions",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "runes",
+      "label": "Effect Runes",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "materials",
+      "label": "Special Materials",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "afflictions",
+      "label": "Afflictions & Poisons",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "crew",
+      "label": "Crew Abilities & Upgrades",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "maneuvers",
+      "label": "Adversary Maneuvers & Traits",
+      "type": "Item",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "adversaries",
+      "label": "Example Adversaries",
+      "type": "Actor",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "hazards",
+      "label": "Hazards",
+      "type": "Actor",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tables",
+      "label": "Roll Tables",
+      "type": "RollTable",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "System Macros",
+      "type": "Macro",
+      "system": "cowboys-and-vikings",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Cowboys & Vikings",
+      "sorting": "m",
+      "color": "#5b2d0e",
+      "packs": [
+        "rules",
+        "macros",
+        "tables"
+      ],
+      "folders": [
+        {
+          "name": "Character Building",
+          "sorting": "m",
+          "color": "#6b4423",
+          "packs": [
+            "origins",
+            "genetics",
+            "talents",
+            "techniques",
+            "bonds"
+          ]
+        },
+        {
+          "name": "Magic",
+          "sorting": "m",
+          "color": "#3b2f6b",
+          "packs": [
+            "spells",
+            "metamagic"
+          ]
+        },
+        {
+          "name": "Equipment & Crafting",
+          "sorting": "m",
+          "color": "#4a4a2a",
+          "packs": [
+            "weapons",
+            "armor",
+            "gear",
+            "concoctions",
+            "runes",
+            "materials",
+            "afflictions"
+          ]
+        },
+        {
+          "name": "The Crew",
+          "sorting": "m",
+          "color": "#2f4f4f",
+          "packs": [
+            "crew"
+          ]
+        },
+        {
+          "name": "Game Master",
+          "sorting": "m",
+          "color": "#7a1f1f",
+          "packs": [
+            "maneuvers",
+            "adversaries",
+            "hazards"
+          ]
+        }
+      ]
+    }
+  ],
+  "socket": true,
+  "initiative": "1d20 + @initiative.mod",
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "strain",
+  "background": "assets/cnv-background.webp",
+  "url": "https://github.com/lathareo/cowboys-and-vikings",
+  "manifest": "https://github.com/lathareo/cowboys-and-vikings/releases/latest/download/system.json",
+  "download": "https://github.com/lathareo/cowboys-and-vikings/releases/download/v1.1.0/cowboys-and-vikings.zip",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "styles",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "media": [
+    {
+      "type": "cover",
+      "url": "assets/cnv-cover.webp"
+    },
+    {
+      "type": "setup",
+      "url": "assets/cnv-background.webp",
+      "thumbnail": "assets/cnv-cover.webp"
+    }
+  ]
+}
